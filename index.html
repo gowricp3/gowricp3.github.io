@@ -5,46 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Portfolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
             background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #4CAF50;
             color: white;
-            padding: 20px;
+            padding: 30px 0;
             text-align: center;
         }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+            border: 5px solid #4CAF50;
+        }
         section {
-            margin: 20px;
+            background: white;
+            margin-bottom: 20px;
             padding: 20px;
-            background-color: white;
-            border-radius: 5px;
+            border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            color: #333;
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
         }
         ul {
             list-style-type: none;
-            padding: 0;
         }
         ul li {
             padding: 5px 0;
         }
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #333;
+            padding: 10px;
+            background-color: #4CAF50;
             color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            margin-top: 20px;
         }
         a {
-            color: #0066cc;
+            color: #4CAF50;
             text-decoration: none;
         }
         a:hover {
@@ -59,41 +82,46 @@
         <p>Web Developer | Software Engineer | Tech Enthusiast</p>
     </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>
-            I am a passionate software developer with experience in building web applications. I love solving problems and learning new technologies to improve my skills.
-        </p>
-    </section>
+    <div class="container">
+        <!-- Profile Image -->
+        <img src="https://via.placeholder.com/150" alt="Profile Image" class="profile-img">
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>React, Node.js, Express</li>
-            <li>MongoDB, MySQL</li>
-            <li>Git, GitHub</li>
-        </ul>
-    </section>
+        <!-- About Me Section -->
+        <section>
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm a passionate web developer specializing in building interactive and responsive web applications. I enjoy learning new technologies and applying them to solve real-world problems.
+            </p>
+        </section>
 
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <strong>Eco Sort - Waste Management System:</strong> Developed a waste management recommendation platform using MERN stack.
-            </li>
-            <li>
-                <strong>Movie Ticket Booking System:</strong> Built a movie seat allocation system using 2D arrays and hash maps.
-            </li>
-        </ul>
-    </section>
+        <!-- Skills Section -->
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Node.js, Express</li>
+                <li>MongoDB, MySQL</li>
+                <li>Git, GitHub</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">https://github.com/yourusername</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">https://www.linkedin.com/in/yourprofile</a></p>
-    </section>
+        <!-- Projects Section -->
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Eco Sort - Waste Management System:</strong> Developed a waste management recommendation platform using MERN stack.</li>
+                <li><strong>Movie Ticket Booking System:</strong> Built a movie seat allocation system using 2D arrays and hash maps.</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section>
+            <h2>Contact</h2>
+            <p>Email: your.email@example.com</p>
+            <p>GitHub: <a href="https://github.com/yourusername" target="_blank">https://github.com/yourusername</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">https://www.linkedin.com/in/yourprofile</a></p>
+        </section>
+    </div>
 
     <footer>
         <p>© 2024 Your Name | All rights reserved.</p>
